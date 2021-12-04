@@ -1,5 +1,5 @@
 # thread example
-run `make run` to view example
+run `make run` to view example<br/>
 use `ctrl+c` to cancel
 # overview
 the program use `pthread.h` and compile with `-pthread` option<br/>
