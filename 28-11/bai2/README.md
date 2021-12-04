@@ -1,0 +1,1 @@
+Viết một chương trình A tạo ra 2 tiến trình con B và C. Ở tiến trình B, C tạo 2 tiến trình con B', C'. Thực hiện ghi nội dung "Hello I'm B Process" đối với B và tương tự với các tiến trình còn lại theo thứ tự B' > C' > B -> C vào file. ở tiến trình A, dùng waitpid để xác định xem khi nào B kết thúc thì ghi vào file.

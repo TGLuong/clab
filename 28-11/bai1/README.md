@@ -1,0 +1,1 @@
+Viết chương trình A tạo ra tiến trình con B, in ra PID và PPID tương ứng, sử dụng systemcall waitpid() để lấy được trạng thái kết thúc của tiến trình còn B

@@ -1,0 +1,1 @@
+sử dụng SIGCHILD để ngăn ngừa việc hình thành zombie
