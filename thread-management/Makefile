@@ -6,3 +6,4 @@ run: main
 
 clear:
 	rm -rf main
+	rm -rf data.bin
