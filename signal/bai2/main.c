@@ -17,19 +17,19 @@ int main() {
     signal(SIGUSR1, &siguser1);
     signal(SIGUSR2, &siguser2);
     sigset_t new_set, old_set;
+    sigemptyset(&new_set);
+    sigaddset(&new_set, SIGINT);
     sigprocmask(SIG_SETMASK, NULL, &old_set);
     if(sigismember(&old_set, SIGINT) == 0) {
         printf("blocking SIGINT and sleep 5s\n");
-        sigemptyset(&new_set);
-        sigaddset(&new_set, SIGINT);
         sigprocmask(SIG_BLOCK, &new_set, &old_set);
         sleep(5);
     }
+    sigemptyset(&new_set);
+    sigaddset(&new_set, SIGINT);
     sigprocmask(SIG_SETMASK, NULL, &old_set);
     if(sigismember(&old_set, SIGINT) == 1) {
         printf("unblocking SIGINT\n");
-        sigemptyset(&new_set);
-        sigaddset(&new_set, SIGINT);
         sigprocmask(SIG_UNBLOCK, &new_set, &old_set);
     }
     while(1);
