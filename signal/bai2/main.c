@@ -13,10 +13,12 @@ void siguser2() {
 
 
 int main() {
+    sigset_t new_set, old_set;
+    
     printf("PID: %d\n", getpid());
     signal(SIGUSR1, &siguser1);
     signal(SIGUSR2, &siguser2);
-    sigset_t new_set, old_set;
+
     sigemptyset(&new_set);
     sigaddset(&new_set, SIGINT);
     sigprocmask(SIG_SETMASK, NULL, &old_set);
@@ -25,6 +27,7 @@ int main() {
         sigprocmask(SIG_BLOCK, &new_set, &old_set);
         sleep(5);
     }
+
     sigemptyset(&new_set);
     sigaddset(&new_set, SIGINT);
     sigprocmask(SIG_SETMASK, NULL, &old_set);
