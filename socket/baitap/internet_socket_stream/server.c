@@ -12,14 +12,14 @@
 int main(int argc, int argv[]) {
 	int server_fd, sock_request, len, opt;
 	struct sockaddr_in address, client;
-	char message[255], buffer[1000];
+	char buffer[1000];
+	
 	server_fd = socket(AF_INET, SOCK_STREAM, 0);
 	if (server_fd == -1) {
 		printf("create socket error\n");
 		exit(EXIT_FAILURE);
 	}
 	
-	opt = 1;
 	if (setsockopt(server_fd, SOL_SOCKET, SO_REUSEADDR, &opt, sizeof(opt)) == -1) {
 		printf("setsockopt error!");
 		exit(EXIT_FAILURE);
@@ -41,6 +41,7 @@ int main(int argc, int argv[]) {
 	
 	while (1) {
 		len = 0;
+		memset(buffer, 0, strlen(buffer));
 		printf("new request:\n");
 		sock_request = accept(server_fd, (struct sockaddr *) &client, &len);
 		if (sock_request == -1) {
@@ -48,7 +49,7 @@ int main(int argc, int argv[]) {
 		}
 		read(sock_request, buffer, 1000);
 		puts(buffer);
-		char *response = "HTTP/1.1 200";
+		char *response = "Hello, I'm server!\n";
 		write(sock_request, response, strlen(response));
 		close(sock_request);
 	}
