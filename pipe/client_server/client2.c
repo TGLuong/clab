@@ -7,7 +7,7 @@
 #include <unistd.h>
 
 #define SERVER_PIPE "fifoserver"
-#define CLIENT_PIPE "fifoclient1"
+#define CLIENT_PIPE "fifoclient2"
 
 void clean_stdin(void) {
     int c;
