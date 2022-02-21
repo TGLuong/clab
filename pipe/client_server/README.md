@@ -11,7 +11,7 @@
 	service hợp lệ
 - không hợp lệ: Gửi lại một bản tin ack thông báo request không thành công tới ./fifoclient101 
 
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Client
+Client
 
 2. Tạo ra 1 FIFO để gửi nhận bản tin (FIFOclient).
 
