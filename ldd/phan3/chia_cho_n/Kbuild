@@ -1,0 +1,2 @@
+EXTRA_CFLAGS = -Wall
+obj-m = chia_cho_n.o

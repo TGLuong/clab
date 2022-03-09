@@ -1,0 +1,2 @@
+/home/embedded/ldd/phan3/nguyen_to/nguyen_to.o
+

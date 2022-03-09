@@ -1,0 +1,1 @@
+cmd_/home/embedded/ldd/phan3/chia_cho_n/chia_cho_n.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000  --build-id  -T ./scripts/module-common.lds -o /home/embedded/ldd/phan3/chia_cho_n/chia_cho_n.ko /home/embedded/ldd/phan3/chia_cho_n/chia_cho_n.o /home/embedded/ldd/phan3/chia_cho_n/chia_cho_n.mod.o;  true

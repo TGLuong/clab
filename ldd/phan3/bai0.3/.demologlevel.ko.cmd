@@ -1,0 +1,1 @@
+cmd_/home/embedded/ldd/phan3/bai0.3/demologlevel.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000  --build-id  -T ./scripts/module-common.lds -o /home/embedded/ldd/phan3/bai0.3/demologlevel.ko /home/embedded/ldd/phan3/bai0.3/demologlevel.o /home/embedded/ldd/phan3/bai0.3/demologlevel.mod.o;  true

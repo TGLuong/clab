@@ -1,0 +1,1 @@
+cmd_/home/embedded/ldd/phan3/nguyen_to_lon_n/lon_hon_n.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000  --build-id  -T ./scripts/module-common.lds -o /home/embedded/ldd/phan3/nguyen_to_lon_n/lon_hon_n.ko /home/embedded/ldd/phan3/nguyen_to_lon_n/lon_hon_n.o /home/embedded/ldd/phan3/nguyen_to_lon_n/lon_hon_n.mod.o;  true
