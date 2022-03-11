@@ -1,0 +1,1 @@
+cmd_/home/embedded/clab/ldd/phan3/nguyen_to_arg/nt.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000  --build-id  -T ./scripts/module-common.lds -o /home/embedded/clab/ldd/phan3/nguyen_to_arg/nt.ko /home/embedded/clab/ldd/phan3/nguyen_to_arg/nt.o /home/embedded/clab/ldd/phan3/nguyen_to_arg/nt.mod.o;  true
