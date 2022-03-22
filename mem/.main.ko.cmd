@@ -1,0 +1,1 @@
+cmd_/home/embedded/clab/mem/main.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000  --build-id  -T ./scripts/module-common.lds -o /home/embedded/clab/mem/main.ko /home/embedded/clab/mem/main.o /home/embedded/clab/mem/main.mod.o;  true

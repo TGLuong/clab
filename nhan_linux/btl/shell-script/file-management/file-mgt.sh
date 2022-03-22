@@ -45,7 +45,7 @@ if [ $command = "edit-file" ]
 fi
 
 if [ $command = "rename-file" ]
-	then 
+	then
 		if [ $2 = "" -o $3 = "" ]
 			then echo "chua nhap ten file va ten file moi"
 			else mv $2 $3

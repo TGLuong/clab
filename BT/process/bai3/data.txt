@@ -1,0 +1,1 @@
+this is fd.this is copy fd.this is dup2 fd.
