@@ -1,4 +1,4 @@
-##segmentation fault, core dumped là lỗi xảy ra khi truy cập vào vùng nhớ không được cấp phép </br>
+## segmentation fault, core dumped là lỗi xảy ra khi truy cập vào vùng nhớ không được cấp phép </br>
 # GDB
 Dể sử dụng `gdb`, chúng ta cần thêm cờ `-g` khi compile. ví dụ : `gcc -g -o main main.c` </br>
 Sau đó chạy lệnh `gdb [tên chương trình]` </br>
