@@ -6,12 +6,12 @@ Dữ liệu sẽ xuất hiện ở vị trí nào của file và tại s
 ## BT2
 Sau mỗi lệnh write dưới đây, Cho biết nội dung sẽ được ghi vào file nào, nội dung là gì và giải thích tại sao? </br>
 - `fd1 = open(file, O_RDWR | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);` </br>
-- `fd3 = open(file, O_RDWR);` </br>
+- `fd2 = open(file, O_RDWR);` </br>
 - `write(fd1, "Hello,", 6);` </br>
 - `write(fd2, "world", 6);` </br>
 - `lseek(fd2, 0, SEEK_SET);` </br>
 - `write(fd1, "HELLO,", 6);` </br>
-- `write(fd3, "Gidday", 6);` </br>
+- `write(fd2, "Gidday", 6);` </br>
 ## BT3
 Viết một chương trình có só lượng command-line arguments là 3, Có dạng như sau: </br>
 `$ ./example_program filename num-bytes [r/w] "Hello"` </br>
