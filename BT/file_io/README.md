@@ -1,5 +1,5 @@
 # BT1
-Viet mot chuong trinh mo mot file bat ki, va su dung co O_APPEND, sau do su dung seek ve dau file va ghi mot vai du lieu vao do, du lieu se xuat hien o cho nao cua file va tai sao lai nhu vay.
+Viết một chương trình mở một file bất kì và sử dụng cờ O_APPEND, sau đó thực hiện seek về đầu file rồi ghi một vài dữ  liệu vào file đó. Dữ liệu sẽ xuất hiện ở vị trí nào của file và tại sao lại như vậy?
 </br>
 # BT2
 Sau moi lenh duoi day, cho biet noi dung se duoc ghi vao file nao, noi dung la gi va giai thich tai sao?
