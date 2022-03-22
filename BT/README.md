@@ -15,13 +15,13 @@ Sau mỗi lệnh write dưới đây, Cho biết nội dung sẽ được 
 ## BT3
 Viết một chương trình có só lượng command-line arguments là 3, Có dạng như sau: </br>
 `$ ./example_program filename num-bytes [r/w] "Hello"` </br>
-Trong đó:
-	1. example_grogram: Tên file thực thi
-	2. filename: Tên file
-	3. num-bytes: Số byte muốn read/write
-	4. [r/w]: r -> Thực hiện đọc từ  filename và in ra màn hình
-		        w -> Thực hiện ghi vào filename
-	5. "Hello": Nội dung bất kì muốn read/write vào filename
+Trong đó: </br>
+	1. example_grogram: Tên file thực thi </br>
+	2. filename: Tên file</br>
+	3. num-bytes: Số byte muốn read/write</br>
+	4. [r/w]: r -> Thực hiện đọc từ  filename và in ra màn hình</br>
+		        w -> Thực hiện ghi vào filename</br>
+	5. "Hello": Nội dung bất kì muốn read/write vào filename</br>
 # 2. Process
 ## BT1
 Giả sử rằng một parent process đã thiết lập một handler cho SIGCHLD và cũng block tín hiệu này. 
