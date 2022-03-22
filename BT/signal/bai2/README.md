@@ -10,7 +10,4 @@ Danh sách Regular signal bao gồm: </br>
 `SIGHUP` `SIGINT` `SIGQUIT` `SIGILL` `SIGTRAP` `SIGABRT` `SIGBUS` `SIGFPE` `SIGKILL` `SIGUSR1` `SIGSEGV` `SIGUSR2` `SIGPIPE` `SIGALRM` `SIGTERM` `SIGSTKFLT` `SIGCHLD` `SIGCONT` `SIGSTOP` `SIGTSTP` `SIGTTIN` `SIGTTOU` `SIGURG` `SIGXCPU` `SIGXFSZ` `SIGVTALRM` `SIGPROF` `SIGWINCH` `SIGIO` `SIGPWR` `SIGSYS` </br>
 # Mức độ ưu tiên của signal
 Mức độ ưu tiên của các regular signal và realtime signal là không xác định, tuy nhiên trong tập các realtime signal, các signal có số thứ tự bé thì được ưu tiên xử lý trước so với các signal có số thứ tự cao
-# Khả năng đính kèm data của realtime signal
-Một điểm khác biệt giữa Realtime signal và Regular signal là Realtime signal có thể gán thêm dữ liệu vào signal
-
 
