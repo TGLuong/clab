@@ -10,3 +10,8 @@ client được chạy có dạng: `./client [option] [server pid] [name] [value
 - `server pid` là process id của server
 - `name` là giá trịvname truyền đến server theo cặp name-value
 - `value` là giá trị value truyền đến server theo cặp name-value
+### Ví dụ chạy client
+- ví dụ create: `./client create 80720 name luong` lệnh này sẽ thêm cặp `name-luong` ở server
+- ví dụ edit: `./client edit 80720 name haha` lệnh này sẽ sửa cặp `name-luong` thành `name-haha` ở server
+- ví dụ delete: `./client delete 80720 name` lệnh này sẽ xoá cặp nào có name là `name` ở server
+- ví dụ show: `./client show 80720 name` lệnh này sẽ lấy value ở server có name là `name`, trả về cho client, client sẽ hiện value này lên
