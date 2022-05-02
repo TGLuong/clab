@@ -1,10 +1,11 @@
 #include <iostream>
 
+using namespace std;
 
 int main() {
-	std::cout << "Enter two number:" << std::endl;
-	int v1 = 0, v2 = 0;
-	std::cin >> v1 >> v2;
-	std::cout << "the sum of " << v1 << " and " << v2 << ": " << v1 + v2 << std::endl;
+	int v1 = 0;
+    cout << v1 << endl;
+    int v1 = 2;
+    cout << v1 << endl;
 	return 0;
 }
