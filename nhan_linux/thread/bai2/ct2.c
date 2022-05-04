@@ -16,7 +16,7 @@ void *pthread_handler(void *arg) {
 	argument = (int*)arg;
 	sprintf(file_name, "file%d.txt", *argument);
 	printf("file name: %s\n", file_name);
-	fd = open(file_name, O_CREAT|O_RDONLY, S_IRWXU);
+	fd = open(file_name, O_CREAT | O_RDWR, S_IRWXU);
 	for (int j = 1; j <= 5000000; j++) {
 		sprintf(buffer, "%d\n", j);
 		write(fd, buffer, strlen(buffer));

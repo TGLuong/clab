@@ -10,7 +10,7 @@ void create_file(int i) {
 	char file_name[10], buffer[10];
 	int fd;
 	sprintf(file_name, "file%d.txt", i);
-	fd = open(file_name, O_CREAT|O_RDONLY, S_IRWXU);
+	fd = open(file_name, O_CREAT | O_RDWR, S_IRWXU);
 	for (int j = 1; j <= 5000000; j++) {
 		sprintf(buffer, "%d\n", j);
 		write(fd, buffer, strlen(buffer));
